@@ -1,0 +1,28 @@
+*{
+    text-align: center;
+}
+
+body {
+    background-image: url("https://blog.spiritualify.com/wp-content/uploads/2019/11/Which-Type-of-Psychic-Power-do-You-Have.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    font-family: 'Odibee Sans', cursive;
+    font-size: 50px;
+}
+
+
+.container {
+    margin: auto;
+    text-align: center;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    border: 6px solid black;
+    border-radius: 10%;
+    background-color: aquamarine;
+    height: 250px;
+    width: 850px;
+    margin-top: 100px;
+    padding-top: 55px;
+}

@@ -1,5 +1,4 @@
 // dom
-
 var guessNumText = document.getElementById("guessleft");
 var lossText = document.getElementById("lost");
 var winText = document.getElementById("won");
@@ -14,14 +13,12 @@ var guessesLim = 9;
 
 
 // generate random numbers
-
 var characters = 'abcdefghijklmnopqrstuvwxyz';
 var generator = characters.charAt(Math.floor(Math.random() * characters.length));
  
  console.log(generator);
 
 // keyboard pressed
-
 document.onkeyup = function (event) {
     input = event.key;
     userGuess = input.toLowerCase(); 
@@ -39,7 +36,8 @@ document.onkeyup = function (event) {
             lossText.innerHTML = userLoss;
 
             reset();
-        } else if (userGuess === generator) {  // matches
+            // matches
+        } else if (userGuess === generator) {  
             alert("'" + userGuess + "' Was The Letter. YOU WON!!");
             userWin++;
             winText.innerHTML = userWin;
@@ -50,10 +48,12 @@ document.onkeyup = function (event) {
                 guessNumText.innerHTML = guessesLim;
             }
         } else {
-            alert("You've Already Used '" + userGuess + "'. Try Again Please."); // duplicated
+            // duplicated
+            alert("You've Already Used '" + userGuess + "'. Try Again Please."); 
         }
+        // not a letter 
     } else {
-        alert("Enter A Letter Please."); // not a letter 
+        alert("Enter A Letter Please."); 
     }
 }
 
